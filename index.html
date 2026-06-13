@@ -412,7 +412,7 @@
       오늘의 단어 추천
     </div>
   </div>
-  <div class="header-shortcut">단추: <span>오늘의 단어추천</span></div>
+
 </header>
 
 <main>
@@ -607,7 +607,7 @@ let currentCat = "전체";
 function init() {
   const d = new Date();
   document.getElementById("today-date").textContent =
-    ;
+    `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일`;
 
   const todayWord = getTodayWord();
   document.getElementById("hero-word").textContent = todayWord.word;
